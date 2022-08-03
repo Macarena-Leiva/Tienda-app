@@ -11,6 +11,7 @@ export const ItemDetailContainer = () => {
 
     return (
         <div className="padreDetalle">
+            <h2>DETALLE DE PRODUCTO</h2>
         <div className="boxDetalle">
             <div className="boximgDetalle"><img className="imgDetalle" src='https://i.pinimg.com/564x/b1/76/c8/b176c8f1db70dc408ad229e4b2cd3e9d.jpg' alt="imagen-detalle" /></div>
             <div className="boxTextoDetalle">

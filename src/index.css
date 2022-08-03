@@ -119,13 +119,18 @@
  .boxDetalle{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
   margin-top: 50px;
  }
 
  .imgDetalle{
-  border-radius: 50px;
+  border-radius: 30px;
+  height: 400px;
+  width: 550px;
+ }
+
+ .boximgDetalle{
+  margin-right: 50px;
  }
 
  .boxTextoDetalle{
