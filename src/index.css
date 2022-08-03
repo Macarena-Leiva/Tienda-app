@@ -1,0 +1,194 @@
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: sticky;
+  top: 0;
+    background-color: black;
+   
+    
+   
+  }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    list-style: none;
+    width: 50vw;
+    list-style: none;
+    
+   
+  }
+
+  li{
+   width: 50vw;
+  
+  }
+
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+  }
+
+  a:hover{
+    background-color: rgba(1, 1, 1, 0.458);
+    color: rgb(255, 215, 53);
+    border-radius: 50px;
+  }
+
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  button{
+    width: 50px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+    
+  }
+
+  .cardItem{
+  
+    width: 300px;
+    height: 450px;
+    margin-top: 90px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+
+  .imgCard{
+    width: 250px;
+    height: 300px;
+  }
+
+  .cardDescripcion {
+    width: 250px;
+    height: 100px;
+  }
+
+ /* detalle de producto */
+
+ .padreDetalle{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+
+}
+
+ .boxDetalle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+ }
+
+ .imgDetalle{
+  border-radius: 50px;
+ }
+
+ .boxTextoDetalle{
+  width: 500px;
+  background-color: black;
+  color: white;
+  height: 400px;
+  padding: 40px;
+  border-radius: 30px;
+ }
+
+ .pDetalle{
+  font-size: 18px;
+  margin: 10px;
+  color: rgb(224, 191, 6);
+ }
+
+ .textoDetalle{
+  margin-left: 10px;
+ }
+
+/*  Contador */
+
+.boxbtn{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxContador{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.numeroContador{
+  margin: 10px;
+  
+}
+
+/* Carrito */
+
+.volver{
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: black;
+  color: rgb(255, 242, 0);
+  cursor: pointer;
+}
+
+.volver:hover{
+  background-color:rgb(255, 242, 0);
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+.boxCarrito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
