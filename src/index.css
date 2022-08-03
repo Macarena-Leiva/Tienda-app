@@ -207,3 +207,23 @@
   align-items: center;
   margin: 20px;
 }
+
+.btnAgregarCarrito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: black;
+}
+
+.btnAgregarCarrito:hover{
+  background-color: rgba(255, 255, 0, 0.333);
+}
+
+h3{
+  color: white;
+}

@@ -30,7 +30,7 @@ export const ItemCount = ({stock}) =>{
                 <button className='btnSumar' onClick={sumar}>+</button>
             </div>
           
-            <Link to='/carrito'><button className='btnAgregarCarrito' >Agregar <img src='https://i.postimg.cc/R0SqBHNX/carrito-de-compras.png' alt='carrito' /></button></Link>
+            <Link to='/carrito'><button className='btnAgregarCarrito' ><h3>Agregar</h3> <img src='https://i.postimg.cc/R0SqBHNX/carrito-de-compras.png' alt='carrito' /></button></Link>
         </div>
         
     )
