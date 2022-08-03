@@ -4,7 +4,7 @@ import { ItemList } from "./ItemList"
 
 
 
-export const ItemListContainer = ( {greeting} ) =>{
+export const ItemListContainer = ( ) =>{
 
     const [mensaje, setMensaje]=useState(false)
     const[loading, setLoading]=useState(true)
