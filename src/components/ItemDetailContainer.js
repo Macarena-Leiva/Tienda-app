@@ -1,30 +1,23 @@
-import { ItemCount } from "./ItemCount";
-import { Link } from "react-router-dom";
-
+import { useState, useEffect } from 'react';
+import { ItemDetail } from './ItemDetail';
+import getOneProduct from '../Mock/getOneProduct'
 
 
 
 export const ItemDetailContainer = () => {
-    
+    const [item, setItem] = useState([]);
+    console.log("item", item);
+  
+    useEffect(() => {
+      getOneProduct.then((res) => setItem(res)).catch((err) => console.log(err));
+    });
 
    
 
     return (
-        <div className="padreDetalle">
-            <h2>DETALLE DE PRODUCTO</h2>
-        <div className="boxDetalle">
-            <div className="boximgDetalle"><img className="imgDetalle" src='https://i.pinimg.com/564x/b1/76/c8/b176c8f1db70dc408ad229e4b2cd3e9d.jpg' alt="imagen-detalle" /></div>
-            <div className="boxTextoDetalle">
-                <h1>Zapatillas</h1>
-                <p className="pDetalle">Descripcion:</p>
-                <p className="textoDetalle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p className="pDetalle" >Precio:<span className="precioDetalle">$12345</span></p>
-                <p className="pDetalle">Stock: 12</p>
-                <ItemCount stock={12} />
-            </div>
-            
-        </div>
-        <Link to='/'><button className='volver'>VOLVER</button></Link>
-        </div>
+        <div>
+        <h1>ACA VA EL ITEMDETAILCONTAINER</h1>
+        <ItemDetail item={item} />
+      </div>
     );
 };
