@@ -16,7 +16,7 @@ export const ItemDetailContainer = () => {
 
     return (
         <div>
-        <h1>ACA VA EL ITEMDETAILCONTAINER</h1>
+        
         <ItemDetail item={item} />
       </div>
     );
